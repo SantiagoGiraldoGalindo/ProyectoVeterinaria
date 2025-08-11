@@ -22,7 +22,7 @@
       </Label>
       <TextField fx:id="TxF_UsuarioAdmin" layoutX="115.0" layoutY="121.0" />
       <TextField fx:id="TxF_ContraseniaAdmin" layoutX="116.0" layoutY="173.0" />
-      <Button layoutX="167.0" layoutY="256.0" mnemonicParsing="false" text="iniciar" />
-      <Button layoutX="167.0" layoutY="306.0" mnemonicParsing="false" text="volver" />
+      <Button fx:id="btn_iniciaraAdmin" layoutX="167.0" layoutY="256.0" mnemonicParsing="false" onAction="#OnIniciarSeAdmin" text="iniciar" />
+      <Button fx:id="btn_VolverAdmin" layoutX="167.0" layoutY="306.0" mnemonicParsing="false" onAction="#OnVolverAdmin" text="volver" />
    </children>
 </AnchorPane>
