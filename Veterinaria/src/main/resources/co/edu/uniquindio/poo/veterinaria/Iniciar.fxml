@@ -6,14 +6,14 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.veterinaria.viewcontroller.IniciarViewController">
    <children>
-      <Label layoutX="242.0" layoutY="44.0" text="Veterinaria" textFill="#3962cc">
+      <Label layoutX="208.0" layoutY="55.0" text="Veterinaria" textFill="#3962cc">
          <font>
             <Font size="41.0" />
          </font>
       </Label>
       <Button fx:id="BtbPropietario" layoutX="72.0" layoutY="217.0" mnemonicParsing="false" onAction="#OnPropietario" text="Propietario" />
-      <Button fx:id="BtbVeterinario" layoutX="466.0" layoutY="217.0" mnemonicParsing="false" onAction="#OnVeterinario" text="Veterinario" />
-      <Label layoutX="312.0" layoutY="153.0" text="Que Soy?" />
+      <Button fx:id="BtbVeterinario" layoutX="463.0" layoutY="217.0" mnemonicParsing="false" onAction="#OnVeterinario" text="Veterinario" />
+      <Label layoutX="275.0" layoutY="148.0" />
       <Button fx:id="BtbAdministrador" layoutX="260.0" layoutY="217.0" mnemonicParsing="false" onAction="#OnAdministrador" text="Administrador" />
    </children>
 </AnchorPane>
