@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.veterinaria.RegistroMascota">
+   <children>
+      <Label layoutX="40.0" layoutY="31.0" prefHeight="38.0" prefWidth="160.0" text="Registro Mascota">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="111.0" text="Nombre" />
+      <TextField layoutX="113.0" layoutY="107.0" />
+      <TextField layoutX="113.0" layoutY="148.0" />
+      <TextField layoutX="113.0" layoutY="188.0" />
+      <Label layoutX="40.0" layoutY="161.0" text="Label" />
+      <Label layoutX="40.0" layoutY="205.0" text="Label" />
+   </children>
+</AnchorPane>
