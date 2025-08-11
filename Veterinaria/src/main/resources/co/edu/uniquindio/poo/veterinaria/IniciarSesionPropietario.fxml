@@ -15,7 +15,7 @@
       <TextField fx:id="TxFcedula" layoutX="130.0" layoutY="125.0" />
       <TextField fx:id="TxFtelefono" layoutX="132.0" layoutY="161.0" />
       <TextField fx:id="TxFdirrecion" layoutX="133.0" layoutY="197.0" />
-      <Button fx:id="BtnContinuar" layoutX="178.0" layoutY="269.0" mnemonicParsing="false" onAction="#OnContinuar" text="Continuar" />
-      <Button fx:id="BtnVolver" layoutX="187.0" layoutY="316.0" mnemonicParsing="false" onAction="#Onvolver" text="Volver" />
+      <Button fx:id="BtnContinuar" layoutX="178.0" layoutY="269.0" mnemonicParsing="false" onAction="#OnContinuar" text="iniciar" />
+      <Button fx:id="BtnVolver" layoutX="177.0" layoutY="319.0" mnemonicParsing="false" onAction="#Onvolver" text="Volver" />
    </children>
 </AnchorPane>
