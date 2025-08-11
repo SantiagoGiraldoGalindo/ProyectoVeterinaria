@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.veterinaria.viewcontroller.IniciarSesionVeterinarioViewController">
+   <children>
+      <Label layoutX="150.0" layoutY="33.0" prefHeight="55.0" prefWidth="177.0" text="Bienvenido">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="118.0" text="Nombre" />
+      <Label layoutX="109.0" layoutY="192.0" text="Contraseña" />
+      <TextField fx:id="TxFnombre" layoutX="179.0" layoutY="114.0" />
+      <TextField fx:id="TxFcontrasena" layoutX="180.0" layoutY="188.0" />
+      <Button fx:id="BtbIniciar" layoutX="228.0" layoutY="263.0" mnemonicParsing="false" onAction="#OnIniciar" text="Iniciar" />
+      <Button fx:id="BtnVolver" layoutX="229.0" layoutY="306.0" mnemonicParsing="false" onAction="#Onvolver" text="Volver" />
+   </children>
+</AnchorPane>
