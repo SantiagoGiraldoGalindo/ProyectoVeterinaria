@@ -11,6 +11,10 @@ module co.edu.uniquindio.poo.veterinaria {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
+    // Paquetes abiertos para reflexión de JavaFX
     opens co.edu.uniquindio.poo.veterinaria to javafx.fxml;
+    opens co.edu.uniquindio.poo.veterinaria.viewcontroller to javafx.fxml;
+
+    // Paquetes exportados públicamente
     exports co.edu.uniquindio.poo.veterinaria;
 }

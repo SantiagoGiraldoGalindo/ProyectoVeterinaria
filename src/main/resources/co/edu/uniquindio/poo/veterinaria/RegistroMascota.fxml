@@ -4,8 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.veterinaria.RegistroMascota">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.veterinaria.viewcontroller.RegistroMascotaViewController">
    <children>
       <Label layoutX="40.0" layoutY="31.0" prefHeight="38.0" prefWidth="160.0" text="Registro Mascota">
          <font>
@@ -13,10 +12,20 @@
          </font>
       </Label>
       <Label layoutX="40.0" layoutY="111.0" text="Nombre" />
-      <TextField layoutX="113.0" layoutY="107.0" />
-      <TextField layoutX="113.0" layoutY="148.0" />
-      <TextField layoutX="113.0" layoutY="188.0" />
-      <Label layoutX="40.0" layoutY="161.0" text="Label" />
-      <Label layoutX="40.0" layoutY="205.0" text="Label" />
+      <TextField fx:id="TxfNombre" layoutX="113.0" layoutY="107.0" />
+      <TextField fx:id="TxfRaza" layoutX="113.0" layoutY="148.0" />
+      <TextField fx:id="TxfEdad" layoutX="113.0" layoutY="188.0" />
+      <Label layoutX="40.0" layoutY="161.0" text="Raza" />
+      <Label layoutX="40.0" layoutY="205.0" text="edad" />
+      <Label layoutX="351.0" layoutY="82.0" prefHeight="18.0" prefWidth="200.0" text="Motivo de la consulta">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="351.0" layoutY="105.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="BtnSiguiente" layoutX="162.0" layoutY="255.0" mnemonicParsing="false" onAction="#OnSiguiente" text="Siguiente" />
+      <Button fx:id="BtnVOlver" layoutX="162.0" layoutY="305.0" mnemonicParsing="false" onAction="#OnVolver" text="Volver" />
+      <ComboBox fx:id="CboxEspecie" layoutX="376.0" layoutY="31.0" onAction="#OnEspecie" prefWidth="150.0" />
+      <Label layoutX="300.0" layoutY="42.0" text="Especie" />
    </children>
 </AnchorPane>

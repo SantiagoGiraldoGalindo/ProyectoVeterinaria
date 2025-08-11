@@ -1,34 +1,32 @@
 package co.edu.uniquindio.poo.veterinaria.viewcontroller;
 
+import co.edu.uniquindio.poo.veterinaria.model.Especie;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
 
-public class IniciarSesionPropietarioViewController {
+public class RegistroMascotaViewController {
+
+    @FXML private TextField TxfNombre ;
+    @FXML private TextField TxfRaza ;
+    @FXML private TextField TxfEdad ;
+    @FXML private ComboBox <Especie> CboxEspecie ;
 
     @FXML
-    private TextField TxFnombre;
-    @FXML private TextField TxFcedula;
-    @FXML private TextField TxFdirrecion;
-    @FXML private TextField TxFtelefono;
-    @FXML private Button BtnContinuar;
+    public void OnVolver(ActionEvent event) {
+    cambiarVista("/co/edu/uniquindio/poo/Veterinaria/IniciarSesionPropietario.fxml", event);}
 
-    public void OnContinuar (ActionEvent event) {
-        cambiarVista("/co/edu/uniquindio/poo/Veterinaria/RegistroMascota.fxml", event);
-    }
-    public void Onvolver (ActionEvent event) {
-        cambiarVista("/co/edu/uniquindio/poo/Veterinaria/Iniciar.fxml", event);
-    }
-
+    @FXML public void OnSiguiente(ActionEvent event) {}
 
     @FXML
     private void cambiarVista(String rutaFXML, ActionEvent event) {
@@ -46,5 +44,19 @@ public class IniciarSesionPropietarioViewController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-}
+    }
+    @FXML
+    public void initialize() {
+        CboxEspecie.setItems(FXCollections.observableArrayList(Especie.values()));
+    }
+    @FXML
+    private void OnEspecie() {
+
+        Especie especieSeleccionado = CboxEspecie.getValue();
+
+        System.out.println("Género seleccionado: " + especieSeleccionado);
+
+
+    }
+
 }

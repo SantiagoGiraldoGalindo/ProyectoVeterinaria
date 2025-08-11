@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.veterinaria.viewcontroller.VeterinarioViewController">
+   <children>
+      <Label layoutX="62.0" layoutY="59.0" text="Bienvenido" />
+      <TableView layoutX="21.0" layoutY="186.0" prefHeight="200.0" prefWidth="567.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Nombre" />
+          <TableColumn prefWidth="75.0" text="Cedula" />
+            <TableColumn prefWidth="75.0" text="Telefono" />
+            <TableColumn prefWidth="75.0" text="Dirrecion" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
