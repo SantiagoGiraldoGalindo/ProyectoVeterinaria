@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="413.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.veterinaria.viewcontroller.ConsultaMedicaViewController">
+   <children>
+      <Label layoutX="53.0" layoutY="48.0" text="Fecha:" />
+      <TextField fx:id="TxfFecha" layoutX="98.0" layoutY="44.0" />
+      <TextField fx:id="TxfHora" layoutX="99.0" layoutY="84.0" />
+      <Label layoutX="56.0" layoutY="88.0" text="Hora" />
+      <TextArea fx:id="TaMotivoC" layoutX="335.0" layoutY="44.0" prefHeight="130.0" prefWidth="200.0" />
+      <Label layoutX="367.0" layoutY="20.0" text="Motivo Consulta" />
+      <Label layoutX="28.0" layoutY="166.0" text="Diagnostico:" />
+      <TextArea fx:id="TaDiagnostico" layoutX="99.0" layoutY="159.0" prefHeight="110.0" prefWidth="200.0" />
+      <TextArea fx:id="TaTratamiento" layoutX="335.0" layoutY="269.0" prefHeight="117.0" prefWidth="200.0" />
+      <Label layoutX="391.0" layoutY="230.0" prefHeight="18.0" prefWidth="95.0" text="Tratamiento" />
+      <Button fx:id="BtnFinalizar" layoutX="44.0" layoutY="353.0" mnemonicParsing="false" onAction="#OnFinalizar" prefHeight="26.0" prefWidth="66.0" text="Finalizar" />
+      <Button fx:id="BtnVolver" layoutX="155.0" layoutY="354.0" mnemonicParsing="false" onAction="#OnVolver" prefHeight="25.0" prefWidth="66.0" text="Volver" />
+
+   </children>
+</AnchorPane>

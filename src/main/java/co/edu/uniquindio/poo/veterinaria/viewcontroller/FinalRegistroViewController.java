@@ -1,6 +1,5 @@
 package co.edu.uniquindio.poo.veterinaria.viewcontroller;
 
-import co.edu.uniquindio.poo.veterinaria.model.Propietario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,37 +7,17 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
 
-public class IniciarSesionPropietarioViewController {
+public class FinalRegistroViewController {
+    @FXML private Button BtnVolver;
 
-    @FXML private TextField TxFnombre;
-    @FXML private TextField TxFcedula;
-    @FXML private TextField TxFdireccion;
-    @FXML private TextField TxFtelefono;
-
-    public void OnContinuar(ActionEvent event) {
-
-        Propietario propietario = new Propietario(
-                TxFnombre.getText(),
-                TxFcedula.getText(),
-                TxFdireccion.getText(),
-                TxFtelefono.getText()
-        );
-
-        ListaData.getInstancia().agregarPropietario(propietario);
-
+    @FXML private void OnVolver(ActionEvent event) {
         cambiarVista("/co/edu/uniquindio/poo/Veterinaria/RegistroMascota.fxml", event);
     }
-
-    public void Onvolver(ActionEvent event) {
-        cambiarVista("/co/edu/uniquindio/poo/Veterinaria/Iniciar.fxml", event);
-    }
-
     @FXML
     private void cambiarVista(String rutaFXML, ActionEvent event) {
         try {

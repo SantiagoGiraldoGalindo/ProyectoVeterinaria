@@ -2,19 +2,35 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.veterinaria.viewcontroller.VeterinarioViewController">
+<AnchorPane prefHeight="405.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.veterinaria.viewcontroller.VeterinarioViewController">
    <children>
-      <Label layoutX="62.0" layoutY="59.0" text="Bienvenido" />
-      <TableView layoutX="21.0" layoutY="186.0" prefHeight="200.0" prefWidth="567.0">
+      <Label layoutX="62.0" layoutY="59.0" text="Bienvenido, Pacientes">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TableView fx:id="TvListaPaciente" layoutY="169.0" prefHeight="236.0" prefWidth="300.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Nombre" />
-          <TableColumn prefWidth="75.0" text="Cedula" />
-            <TableColumn prefWidth="75.0" text="Telefono" />
-            <TableColumn prefWidth="75.0" text="Dirrecion" />
-            <TableColumn prefWidth="75.0" text="Column X" />
+          <TableColumn fx:id="TcNombre" prefWidth="75.0" text="Nombre" />
+          <TableColumn fx:id="TcCedula" prefWidth="75.0" text="Cedula" />
+            <TableColumn fx:id="TcTelefono" prefWidth="75.0" text="Telefono" />
+            <TableColumn fx:id="TcDireccion" prefWidth="66.19999694824219" text="Direccion" />
+            <TableColumn prefWidth="84.19998168945312" text="Column X" />
             <TableColumn prefWidth="75.0" text="Column X" />
         </columns>
       </TableView>
+      <TableView fx:id="TvListaMascota" layoutX="290.0" layoutY="169.0" prefHeight="236.0" prefWidth="320.0">
+        <columns>
+          <TableColumn fx:id="TcNombreM" prefWidth="75.0" text="Nombre M" />
+          <TableColumn fx:id="TcRaza" prefWidth="75.0" text="Raza" />
+            <TableColumn fx:id="TcEdad" prefWidth="45.20001220703125" text="Edad" />
+            <TableColumn fx:id="TcEspecie" prefWidth="74.0" text="Especie" />
+            <TableColumn fx:id="TcId" prefWidth="48.79998779296875" text="Id" />
+        </columns>
+      </TableView>
+      <Button fx:id="BtnVolver" layoutX="151.0" layoutY="113.0" mnemonicParsing="false" onAction="#OnVolver" text="Volver" />
+      <Button fx:id="BtnLimpiar" layoutX="239.0" layoutY="113.0" mnemonicParsing="false" onAction="#OnLimpiar" text="Limpiar" />
+      <Button fx:id="BtnSeleccionar" layoutX="326.0" layoutY="113.0" mnemonicParsing="false" onAction="#OnSeleccionar" text="Seleccionar" />
    </children>
 </AnchorPane>

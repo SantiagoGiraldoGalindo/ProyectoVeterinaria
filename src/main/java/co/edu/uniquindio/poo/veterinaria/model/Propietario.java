@@ -4,54 +4,28 @@ public class Propietario {
     private String nombre;
     private String cedula;
     private String telefono;
-    private String dirreccion;
+    private String direccion;
     private Mascota mascota;
 
-    public Propietario (String nombre, String cedula, String telefono, String dirreccion) {
+    public Propietario(String nombre, String cedula, String direccion, String telefono) {
         this.nombre = nombre;
         this.cedula = cedula;
-        this.telefono = telefono;
-        this.dirreccion = dirreccion;
-        this.mascota = mascota;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getCedula() {
-        return cedula;
-    }
-
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
-    }
-
-    public String getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(String telefono) {
+        this.direccion = direccion;
         this.telefono = telefono;
     }
 
-    public String getDirreccion() {
-        return dirreccion;
-    }
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
 
-    public void setDirreccion(String dirreccion) {
-        this.dirreccion = dirreccion;
-    }
+    public String getCedula() { return cedula; }
+    public void setCedula(String cedula) { this.cedula = cedula; }
 
-    public Mascota getMascota() {
-        return mascota;
-    }
+    public String getTelefono() { return telefono; }
+    public void setTelefono(String telefono) { this.telefono = telefono; }
 
-    public void setMascota(Mascota mascota) {
-        this.mascota = mascota;
-    }
+    public String getDireccion() { return direccion; }
+    public void setDireccion(String direccion) { this.direccion = direccion; }
+
+    public Mascota getMascota() { return mascota; }
+    public void setMascota(Mascota mascota) { this.mascota = mascota; }
 }
