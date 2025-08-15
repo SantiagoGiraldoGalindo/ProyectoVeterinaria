@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.veterinaria.viewcontroller.AdministradorViewController">
+   <children>
+      <Label layoutX="170.0" layoutY="41.0" text="Panel Administrador">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRVeterinarios" layoutX="119.0" layoutY="200.0" mnemonicParsing="false" onAction="#OnRegistrarVeterinarios" text="Registrar Veterinarios" />
+      <Button fx:id="btnVeDisponibles" layoutX="365.0" layoutY="200.0" mnemonicParsing="false" onAction="#OnVeDisponibles" text="Veterinarios Disponibles" />
+      <Button fx:id="btnVolverAdmin" layoutX="484.0" layoutY="330.0" mnemonicParsing="false" onAction="#OnVolver" text="Volver" />
+   </children>
+</AnchorPane>

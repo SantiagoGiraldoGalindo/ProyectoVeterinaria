@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 import javafx.scene.control.PasswordField;
 
-public class IniciarAdministradorViewController {
+public class InciarAdministradorViewController {
 
     @FXML
     private ResourceBundle resources;
@@ -80,3 +80,4 @@ public class IniciarAdministradorViewController {
 
 
 }
+

@@ -27,7 +27,7 @@ public class IniciarViewController {
       cambiarVista("/co/edu/uniquindio/poo/Veterinaria/IniciarSesionVeterinario.fxml", event);
    }
    @FXML public void OnAdministrador(ActionEvent event) {
-      cambiarVista("/co/edu/uniquindio/poo/Veterinaria/IniciarSesionVeterinario.fxml", event);
+      cambiarVista("/co/edu/uniquindio/poo/Veterinaria/IniciarAdministrador.fxml", event);
    }
    @FXML
    private void cambiarVista(String rutaFXML, ActionEvent event) {

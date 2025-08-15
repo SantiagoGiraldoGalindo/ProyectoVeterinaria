@@ -2,6 +2,7 @@ package co.edu.uniquindio.poo.veterinaria.viewcontroller;
 
 import co.edu.uniquindio.poo.veterinaria.model.Mascota;
 import co.edu.uniquindio.poo.veterinaria.model.Propietario;
+import co.edu.uniquindio.poo.veterinaria.model.Veterinario;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -14,6 +15,7 @@ public class ListaData {
 
 
     private final ObservableList<Propietario> listaPropietarios;
+
 
 
     private ListaData() {
@@ -40,11 +42,22 @@ public class ListaData {
     }
     private ObservableList<Mascota> listaMascotas = FXCollections.observableArrayList();
 
+
     public ObservableList<Mascota> getListaMascotas() {
         return listaMascotas;
     }
 
     public void agregarMascota(Mascota mascota) {
         listaMascotas.add(mascota);
+    }
+
+    public ObservableList<Veterinario> listaVeterinarios = FXCollections.observableArrayList();
+
+    public ObservableList<Veterinario> getListaVeterinarios() {
+        return listaVeterinarios;
+    }
+
+    public void agregarVeterinario(Veterinario veterinario) {
+        listaVeterinarios.add(veterinario);
     }
 }
