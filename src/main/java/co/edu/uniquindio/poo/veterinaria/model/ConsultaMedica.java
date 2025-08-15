@@ -8,7 +8,16 @@ public class ConsultaMedica {
     private Veterinario veterinario;
     private String motivoConsulta;
     private String diagnostico;
-
+    /**
+     * Constructor de la clase ConsultaMedica.
+     *
+     * @param fecha          Fecha de la consulta.
+     * @param hora           Hora de la consulta.
+     * @param mascota        Mascota atendida.
+     * @param veterinario    Veterinario que atiende.
+     * @param motivoConsulta Motivo por el cual se realiza la consulta.
+     * @param diagnostico    Diagnóstico emitido.
+     */
     public ConsultaMedica(String fecha, String hora, Mascota mascota, Veterinario veterinario, String motivoConsulta, String diagnostico) {
 
         this.fecha = fecha;

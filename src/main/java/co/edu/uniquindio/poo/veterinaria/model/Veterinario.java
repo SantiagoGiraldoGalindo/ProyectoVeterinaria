@@ -4,7 +4,13 @@ public class Veterinario {
     private String nombre;
     private Especialidad especialidad;
     private String id;
-
+    /**
+     * Constructor de Veterinario.
+     *
+     * @param nombre       Nombre del veterinario.
+     * @param especialidad Especialidad del veterinario.
+     * @param id           Identificador único.
+     */
     public Veterinario(String nombre, Especialidad especialidad, String id) {
         this.nombre = nombre;
         this.especialidad = especialidad;

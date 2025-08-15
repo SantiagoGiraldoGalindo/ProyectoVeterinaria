@@ -6,7 +6,14 @@ public class Propietario {
     private String telefono;
     private String direccion;
     private Mascota mascota;
-
+    /**
+     * Constructor de la clase Propietario.
+     *
+     * @param nombre    Nombre completo del propietario.
+     * @param cedula    Número de cédula.
+     * @param direccion Dirección de residencia.
+     * @param telefono  Número de contacto.
+     */
     public Propietario(String nombre, String cedula, String direccion, String telefono) {
         this.nombre = nombre;
         this.cedula = cedula;
