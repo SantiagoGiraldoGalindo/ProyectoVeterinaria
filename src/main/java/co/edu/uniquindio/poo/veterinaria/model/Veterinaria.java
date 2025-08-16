@@ -9,7 +9,12 @@ public class Veterinaria {
     private List<Propietario> listPropetiarios;
     private List<Veterinario> listVeterinario;
     private List<ConsultaMedica> listConsultaM;
-
+    /**
+     * Constructor de la clase Veterinaria.
+     *
+     * @param nombre    Nombre de la veterinaria.
+     * @param ubicacion Dirección o ubicación física.
+     */
     public Veterinaria(String nombre, String ubicacion) {
         this.nombre = nombre;
         this.ubicacion = ubicacion;
@@ -18,12 +23,26 @@ public class Veterinaria {
         this.listConsultaM = new ArrayList<>();
     }
 
+    /**
+     * Metodo para agragar propietario
+     * @param propietario
+     */
     public void agregarPropietario(Propietario propietario) {
         this.listPropetiarios.add(propietario);
     }
+
+    /**
+     * metodo para agregar veterinario
+     * @param veterinario
+     */
     public void agregarVeterinario(Veterinario veterinario) {
         this.listVeterinario.add(veterinario);
     }
+
+    /**
+     * metodo para agregar consulta medica
+     * @param consulta
+     */
     public void agregarConsultaM(ConsultaMedica consulta) {
         this.listConsultaM.add(consulta);
     }

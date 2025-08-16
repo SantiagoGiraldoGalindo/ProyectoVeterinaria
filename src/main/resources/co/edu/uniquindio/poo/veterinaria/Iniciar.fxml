@@ -13,7 +13,6 @@
       </Label>
       <Button fx:id="BtbPropietario" layoutX="72.0" layoutY="217.0" mnemonicParsing="false" onAction="#OnPropietario" text="Propietario" />
       <Button fx:id="BtbVeterinario" layoutX="466.0" layoutY="217.0" mnemonicParsing="false" onAction="#OnVeterinario" text="Veterinario" />
-      <Label layoutX="312.0" layoutY="153.0" text="Que Soy?" />
       <Button fx:id="BtbAdministrador" layoutX="260.0" layoutY="217.0" mnemonicParsing="false" onAction="#OnAdministrador" text="Administrador" />
    </children>
 </AnchorPane>

@@ -6,7 +6,15 @@ public class Mascota {
     private String raza;
     private int edad;
     private String id;
-
+    /**
+     * Constructor de la clase Mascota.
+     *
+     * @param nombre  Nombre de la mascota.
+     * @param especie Especie de la mascota.
+     * @param raza    Raza de la mascota.
+     * @param edad    Edad de la mascota.
+     * @param id      Identificador único de la mascota.
+     */
     public Mascota(String nombre, Especie especie, String raza, int edad, String id) {
         this.nombre = nombre;
         this.especie = especie;
