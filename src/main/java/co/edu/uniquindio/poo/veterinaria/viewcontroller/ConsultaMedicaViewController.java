@@ -29,7 +29,10 @@ public class ConsultaMedicaViewController {
 @FXML private  Veterinario TaVeterinario;
 
 
-
+    /**
+     * Evento que se lanza al presionar "Finalizar".
+     * Crea una consulta médica con los datos capturados y la guarda en ListaData.
+     */
 @FXML private void OnFinalizar(ActionEvent event) {
      ConsultaMedica consultaMedica = new ConsultaMedica(
                 TxfFecha.getText(),
@@ -44,7 +47,9 @@ public class ConsultaMedicaViewController {
         cambiarVista("/co/edu/uniquindio/poo/Veterinaria/HistoriasClinicas.fxml", event);
 }
 
-
+    /**
+     * Botón para regresar a la vista del veterinario.
+     */
     @FXML private void OnVolver(ActionEvent event) {
         cambiarVista("/co/edu/uniquindio/poo/Veterinaria/Veterinario.fxml", event);
     }

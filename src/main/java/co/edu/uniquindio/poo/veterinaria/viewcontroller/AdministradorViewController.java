@@ -25,17 +25,23 @@ public class AdministradorViewController {
 
     @FXML
     private Button btnVeDisponibles;
-
+    /**
+     * Permite al administrador registrar un nuevo veterinario.
+     */
     @FXML
     void OnRegistrarVeterinarios(ActionEvent event) {
         cambiarVista("/co/edu/uniquindio/poo/Veterinaria/RegistrarVeterinario.fxml", event);
     }
-
+    /**
+     * Muestra la lista de veterinarios disponibles.
+     */
     @FXML
     void OnVeDisponibles(ActionEvent event) {
         cambiarVista("/co/edu/uniquindio/poo/Veterinaria/ListaVeterinariosDispo.fxml", event);
     }
-
+    /**
+     * Cambia entre vistas de la aplicación.
+     */
     @FXML
     private void cambiarVista(String rutaFXML, ActionEvent event) {
         try {
@@ -56,7 +62,9 @@ public class AdministradorViewController {
         assert btnVeDisponibles != null : "fx:id=\"btnVeDisponibles\" was not injected: check your FXML file 'Administrador.fxml'.";
 
     }
-
+    /**
+     * Retorna a la vista de inicio de sesión.
+     */
     public void OnVolver(ActionEvent event) {
         cambiarVista("/co/edu/uniquindio/poo/Veterinaria/Iniciar.fxml", event);
     }

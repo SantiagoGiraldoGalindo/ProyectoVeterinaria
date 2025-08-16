@@ -42,6 +42,10 @@ public class RegistrarVeterinarioViewController {
     @FXML
     private TextField txtNombre;
 
+    /**
+     * Boton para registrar veterinarios
+     * @param event
+     */
     @FXML
     void onGuardar(ActionEvent event) {
         try {

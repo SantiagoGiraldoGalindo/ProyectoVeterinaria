@@ -87,6 +87,11 @@ public class Veterinaria {
         this.listConsultaM = listConsultaM;
     }
 
+    /**
+     * Metodo para obtener un veterinario segun la id
+     * @param id
+     * @return
+     */
     public Veterinario getVeterinarioById(String id){
         for(Veterinario veterinario: this.getListVeterinario()){
             if(id.equals(veterinario.getId())){
@@ -96,6 +101,11 @@ public class Veterinaria {
         return null;
     }
 
+    /**
+     * Metodo para obtener una mascota segun la id
+     * @param id
+     * @return
+     */
     public Mascota getMascotaById(String id){
         for(Propietario propietario: this.getListPropetiarios()){
             if(id.equals(propietario.getMascota().getId())){

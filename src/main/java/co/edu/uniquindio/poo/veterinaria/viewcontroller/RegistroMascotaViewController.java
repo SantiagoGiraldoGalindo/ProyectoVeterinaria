@@ -32,6 +32,10 @@ public class RegistroMascotaViewController {
         cambiarVista("/co/edu/uniquindio/poo/Veterinaria/Iniciar.fxml", event);
     }
 
+    /**
+     * boton para registrar mascota
+     * @param event
+     */
     @FXML
     public void OnSiguiente(ActionEvent event) {
         try {

@@ -19,16 +19,30 @@ public class IniciarViewController {
    @FXML private Button BtbVeterinario;
    @FXML private Button BtbAdministrador;
 
-
+    /**
+     * Boton para acceder a la vista de propietario
+     * @param event
+     */
    @FXML public void OnPropietario(ActionEvent event) {
       cambiarVista("/co/edu/uniquindio/poo/Veterinaria/IniciarSesionPropietario.fxml", event);
    }
+
+    /**
+     * Boton para acceder a la vista de veterinario
+     * @param event
+     */
    @FXML public void OnVeterinario(ActionEvent event) {
       cambiarVista("/co/edu/uniquindio/poo/Veterinaria/IniciarSesionVeterinario.fxml", event);
    }
+
+    /**
+     * Boton para acceder a la vista ed administrador
+     * @param event
+     */
    @FXML public void OnAdministrador(ActionEvent event) {
       cambiarVista("/co/edu/uniquindio/poo/Veterinaria/IniciarAdministrador.fxml", event);
    }
+
    @FXML
    private void cambiarVista(String rutaFXML, ActionEvent event) {
       try {

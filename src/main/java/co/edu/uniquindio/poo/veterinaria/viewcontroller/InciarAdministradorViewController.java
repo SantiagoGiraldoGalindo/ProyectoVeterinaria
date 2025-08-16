@@ -35,7 +35,9 @@ public class InciarAdministradorViewController {
 
     @FXML
     private Button btn_iniciaraAdmin;
-
+    /**
+     * Verifica credenciales del administrador.
+     */
     @FXML
     void OnIniciarSeAdmin(ActionEvent event) {
         String passwordIngresada =PscontrasenaAdmin.getText();
@@ -58,8 +60,10 @@ public class InciarAdministradorViewController {
     }
 
 
-
-
+    /**
+     * Boton para volver a la pantalla principal
+     * @param event
+     */
     public void OnVolverAdmin(ActionEvent event) {
         cambiarVista("/co/edu/uniquindio/poo/Veterinaria/Iniciar.fxml", event);
     }

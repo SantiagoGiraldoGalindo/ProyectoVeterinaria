@@ -24,7 +24,9 @@ public class IniciarSesionVeterinarioViewController {
     private Button BtbIniciar;
     @FXML
     private Button BtnVolver;
-
+    /**
+     * Verifica credenciales del veterinario.
+     */
     @FXML void OnIniciar(ActionEvent event) {
 
         String passwordIngresada = PfContrasena.getText();

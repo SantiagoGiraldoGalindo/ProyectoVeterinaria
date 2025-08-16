@@ -10,6 +10,16 @@ public class ConsultaMedica {
     private String diagnostico;
     private String tratamiento;
 
+    /**
+     *Metodo constructor de la clase ConsultaMedica
+     * @param fecha
+     * @param hora
+     * @param mascota
+     * @param veterinario
+     * @param motivoConsulta
+     * @param diagnostico
+     * @param tratamiento
+     */
     public ConsultaMedica(String fecha, String hora, Mascota mascota, Veterinario veterinario, String motivoConsulta, String diagnostico, String tratamiento) {
 
         this.fecha = fecha;
