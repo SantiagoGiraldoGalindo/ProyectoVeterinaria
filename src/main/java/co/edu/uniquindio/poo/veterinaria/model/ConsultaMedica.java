@@ -8,8 +8,9 @@ public class ConsultaMedica {
     private Veterinario veterinario;
     private String motivoConsulta;
     private String diagnostico;
+    private String tratamiento;
 
-    public ConsultaMedica(String fecha, String hora, Mascota mascota, Veterinario veterinario, String motivoConsulta, String diagnostico) {
+    public ConsultaMedica(String fecha, String hora, Mascota mascota, Veterinario veterinario, String motivoConsulta, String diagnostico, String tratamiento) {
 
         this.fecha = fecha;
         this.hora = hora;
@@ -17,6 +18,7 @@ public class ConsultaMedica {
         this.veterinario = veterinario;
         this.motivoConsulta = motivoConsulta;
         this.diagnostico = diagnostico;
+        this.tratamiento = tratamiento;
 
     }
 
@@ -66,5 +68,13 @@ public class ConsultaMedica {
 
     public void setDiagnostico(String diagnostico) {
         this.diagnostico = diagnostico;
+    }
+
+    public String getTratamiento() {
+        return tratamiento;
+    }
+
+    public void setTratamiento(String tratamiento) {
+        this.tratamiento = tratamiento;
     }
 }

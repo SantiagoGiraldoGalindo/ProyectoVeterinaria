@@ -67,4 +67,22 @@ public class Veterinaria {
     public void setListConsultaM(List<ConsultaMedica> listConsultaM) {
         this.listConsultaM = listConsultaM;
     }
+
+    public Veterinario getVeterinarioById(String id){
+        for(Veterinario veterinario: this.getListVeterinario()){
+            if(id.equals(veterinario.getId())){
+                return veterinario;
+            }
+        }
+        return null;
+    }
+
+    public Mascota getMascotaById(String id){
+        for(Propietario propietario: this.getListPropetiarios()){
+            if(id.equals(propietario.getMascota().getId())){
+                return propietario.getMascota();
+            }
+        }
+        return null;
+    }
 }

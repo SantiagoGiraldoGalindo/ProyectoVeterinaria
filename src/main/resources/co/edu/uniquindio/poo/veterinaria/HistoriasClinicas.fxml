@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.veterinaria.viewcontroller.HistoriasClinicasViewController">
+   <children>
+      <TableView fx:id="TvHistorias" layoutX="116.0" layoutY="104.0" prefHeight="318.0" prefWidth="410.0">
+        <columns>
+          <TableColumn fx:id="TcFecha" prefWidth="139.80001068115234" text="Fecha" />
+          <TableColumn fx:id="TcHora" prefWidth="134.5999755859375" text="Hora" />
+            <TableColumn fx:id="TcMascota" prefWidth="133.20001220703125" text="Mascota" />
+            <TableColumn fx:id="TcVeterinario" prefWidth="133.20001220703125" text="Veterinario" />
+            <TableColumn fx:id="TcMotivo" prefWidth="133.20001220703125" text="Motivo" />
+            <TableColumn fx:id="TcDiagnostico" prefWidth="133.20001220703125" text="Diagnostico" />
+            <TableColumn fx:id="TcTratamiento" prefWidth="133.20001220703125" text="Tratamiento" />
+        </columns>
+      </TableView>
+      <Label layoutX="184.0" layoutY="40.0" prefHeight="17.0" prefWidth="298.0" text="Historia clinica" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVolverV" layoutX="565.0" layoutY="389.0" mnemonicParsing="false" onAction="#OnVolver" text="Volver" />
+   </children>
+</Pane>

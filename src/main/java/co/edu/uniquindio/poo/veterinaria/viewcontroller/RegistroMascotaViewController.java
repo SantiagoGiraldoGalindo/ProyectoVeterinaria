@@ -2,7 +2,6 @@ package co.edu.uniquindio.poo.veterinaria.viewcontroller;
 
 import co.edu.uniquindio.poo.veterinaria.model.Especie;
 import co.edu.uniquindio.poo.veterinaria.model.Mascota;
-import co.edu.uniquindio.poo.veterinaria.model.Propietario;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

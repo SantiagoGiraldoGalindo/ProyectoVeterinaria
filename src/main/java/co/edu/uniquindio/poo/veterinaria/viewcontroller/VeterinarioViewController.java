@@ -66,6 +66,10 @@ public class VeterinarioViewController implements Initializable {
         TvListaMascota.setItems(ListaData.getInstancia().getListaMascotas());
     }
 
+    public TableColumn<Propietario, String> getTcNombre() {
+    return TcNombre;
+}
+
     @FXML
     private void OnVolver(ActionEvent event) {
         cambiarVista("/co/edu/uniquindio/poo/Veterinaria/Iniciar.fxml", event);

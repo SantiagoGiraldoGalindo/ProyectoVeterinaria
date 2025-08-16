@@ -1,5 +1,6 @@
 package co.edu.uniquindio.poo.veterinaria.viewcontroller;
 
+import co.edu.uniquindio.poo.veterinaria.model.ConsultaMedica;
 import co.edu.uniquindio.poo.veterinaria.model.Mascota;
 import co.edu.uniquindio.poo.veterinaria.model.Propietario;
 import co.edu.uniquindio.poo.veterinaria.model.Veterinario;
@@ -60,4 +61,24 @@ public class ListaData {
     public void agregarVeterinario(Veterinario veterinario) {
         listaVeterinarios.add(veterinario);
     }
+
+    public ObservableList<ConsultaMedica> listaHistoriaClinica = FXCollections.observableArrayList();
+
+    public ObservableList<ConsultaMedica> getListaHistoriaClinica() {
+        return listaHistoriaClinica;
+    }
+
+    public void agregarHistoriaClinica(ConsultaMedica consultaMedica) {
+        listaHistoriaClinica.add(consultaMedica);
+    }
+
+    public Mascota getMascotbyId(String id){
+        for(Propietario propietario: getInstancia().getListaPropietarios()){
+            if(id.equals(propietario.getMascota().getId())){
+                return propietario.getMascota();
+            }
+        }
+        return null;
+    }
+
 }

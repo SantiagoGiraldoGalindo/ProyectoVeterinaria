@@ -3,8 +3,6 @@ package co.edu.uniquindio.poo.veterinaria.viewcontroller;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
-import co.edu.uniquindio.poo.veterinaria.model.Especialidad;
 import co.edu.uniquindio.poo.veterinaria.model.Veterinario;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
