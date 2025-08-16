@@ -18,6 +18,10 @@ public class FinalRegistroViewController {
     @FXML private void OnVolver(ActionEvent event) {
         cambiarVista("/co/edu/uniquindio/poo/Veterinaria/RegistroMascota.fxml", event);
     }
+
+    @FXML private void OnHistorial(ActionEvent event) {
+        cambiarVista("/co/edu/uniquindio/poo/Veterinaria/HistoriasClinicas.fxml", event);
+    }
     @FXML
     private void cambiarVista(String rutaFXML, ActionEvent event) {
         try {

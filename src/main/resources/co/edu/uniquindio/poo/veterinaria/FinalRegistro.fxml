@@ -8,5 +8,6 @@
       <Label layoutX="128.0" layoutY="40.0" prefHeight="81.0" prefWidth="870.0" text="" />
       <Button fx:id="BtnVolver" layoutX="461.0" layoutY="234.0" mnemonicParsing="false" onAction="#OnVolver" text="Volver" />
       <Label layoutX="389.0" layoutY="113.0" text="" />
+      <Button fx:id="btnHistorial" layoutX="209.0" layoutY="234.0" mnemonicParsing="false" onAction="#OnHistorial" text="Historial clinico" />
    </children>
 </AnchorPane>
